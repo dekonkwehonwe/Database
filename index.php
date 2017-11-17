@@ -64,7 +64,7 @@
                                 gender = '".$_POST['gender']."',
                                 age = ".$_POST['age'].", 
                                 superpower = '".$_POST['superpower']."'
-                            WHERE id=1";
+                            WHERE id=0";
              $query = $db->prepare( $sqlupdate );
              $query->execute();
              $results = $query->fetchAll();
